@@ -22,6 +22,8 @@ aside: false
 
 比如要用参考图中的家居配色为下面几个瓶子配色：
 
+![这是需要配色的瓶子](\public\color-intructions-image4.jpg)
+
 ![找好一张参考图](\public\color-intructions-image1.jpg)
 
 ![提取一下主题色，数量设置为3种](\public\color-intructions-image2.jpg)
