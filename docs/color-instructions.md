@@ -28,4 +28,6 @@ aside: false
 
 ![提取一下主题色，数量设置为3种](\public\color-intructions-image2.jpg)
 
+复制色号，在PS修改瓶身颜色，或者渲染器的材质编辑器中粘贴色号并渲染。
+
 ![为每个瓶子配色](\public\color-intructions-image3.jpg)
