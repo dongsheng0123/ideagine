@@ -1,0 +1,54 @@
+
+/* Custom styles */
+:root {
+  --vp-c-brand-1: #6366f1;
+  --vp-c-brand-2: #4f46e5;
+  --vp-c-brand-3: #4338ca;
+}
+
+/* Remove underline from links in the document content */
+.vp-doc a {
+  text-decoration: none;
+}
+
+.vp-doc a:hover {
+  text-decoration: none;
+}
+
+/* Paragraph indentation */
+.vp-doc p {
+  text-indent: 2em;
+}
+
+/* Image styling */
+.vp-doc img {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+
+/* Caption styling */
+.img-caption {
+  text-align: center;
+  font-size: 0.9em;
+  color: var(--vp-c-text-2);
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+  text-indent: 0; /* Reset indentation */
+}
+
+/* Image caption styling (using adjacent sibling selector if caption is a paragraph after img)
+   Or if it's alt text, we can't display it purely with CSS easily unless we wrap it.
+   Assuming standard markdown image syntax which renders as <img ...>
+   VitePress doesn't automatically render captions. 
+   However, if you want the alt text to appear, we need a custom component or JS.
+   
+   If the user means "just style the image itself to be 50% and centered", the above works.
+   But "show image title at bottom" implies displaying the alt text.
+*/
+
+/* 
+   Since we can't easily inject the alt text as a caption with just CSS for a standard <img> tag
+   (content: attr(alt) works on pseudo-elements but <img> is a replaced element and doesn't support pseudo-elements in most browsers),
+   we will handle the sizing/centering first.
+*/
